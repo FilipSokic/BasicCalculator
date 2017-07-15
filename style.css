@@ -1,0 +1,55 @@
+html {
+  background: #D2CC28;
+  color: #6cacc5;
+}
+
+body {
+  color: #FAFAFA;
+  font: 300 18px/1.6 "Helvetica",helvetica;
+  margin: 0;
+  padding: 5em 0 2em;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  margin: 0;
+}
+
+.calculator {
+  font-size: 28px;
+  margin: 0 auto;
+  width: 10em;
+
+  &::before,
+  &::after {
+    content: " ";
+
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.viewer {
+  color: #FAFAFA;
+  float: left;
+  line-height: 3em;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 7.5em;
+  height: 3em;
+}
+
+button {
+  border: 0;
+
+  color: #FAFAFA;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
