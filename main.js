@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
-  var el = function(element) {
+  let el = function(element) {
     if (element.charAt(0) === "#") {
       return document.querySelector(element);
     }
@@ -9,7 +9,7 @@
     return document.querySelectorAll(element);
   };
 
-  var viewer = el("#viewer"),
+  let viewer = el("#viewer"),
     equals = el("#equals"),
     nums = el(".num"),
     ops = el(".ops"),
@@ -18,7 +18,7 @@
     resultNum,
     operator;
 
-    var setNum = function() {
+    let setNum = function() {
     if (resultNum) {
       theNum = this.getAttribute("data-num");
       resultNum = "";
@@ -38,7 +38,7 @@
   };
 
 
-  var displayNum = function() {
+  let displayNum = function() {
 
 
     oldNum = parseFloat(oldNum);
