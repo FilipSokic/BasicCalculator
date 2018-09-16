@@ -1,5 +1,4 @@
 (function() {
-  "use strict";
 
   let el = function(element) {
     if (element.charAt(0) === "#") {
@@ -65,14 +64,6 @@
         resultNum = theNum;
     }
 
-    if (!isFinite(resultNum)) {
-      if (isNaN(resultNum)) {
-        resultNum = "You broke it!";
-      } else {
-        resultNum = "Look at what you've done";
-        el('#calculator').classList.add("broken");
-        el('#reset').classList.add("show");
-      }
     }
 
     viewer.innerHTML = resultNum;
